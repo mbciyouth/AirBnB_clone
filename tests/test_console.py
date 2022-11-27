@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module for TestHBNBCommand class."""
 
+
 from console import HBNBCommand
 from models.engine.file_storage import FileStorage
 import unittest
@@ -388,7 +389,7 @@ EOF  all  count  create  destroy  help  quit  show  update
     def help_test_count_advanced(self, classname):
         """Helps test .count() command."""
         for i in range(20):
-        uid = self.create_class(classname)
+            uid = self.create_class(classname)
         with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd("{}.count()".format(classname))
         s = f.getvalue()[:-1]
