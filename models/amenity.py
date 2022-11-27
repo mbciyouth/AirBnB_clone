@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""This module creates a Amenity class"""
+"""Module for Amenity class."""
 
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """Class for managing amenity objects"""
-
+    """Class representing a Amenity."""
     name = ""
